@@ -4,21 +4,21 @@ using namespace std;
 class Car{
     public:
     void start() {
-        cout << "Vehicle started." << endl;
+        cout << "Car started." << endl;
     }
 };
 //Derived class
-class Car : public Vehicle {
-public:
+class Tesla : public Car{
+    public:
     void drive() {
-        cout << "Car is moving." << endl;
+        cout << "Tesla is moving." << endl;
     }
 };
   
 //Driver code
 int main(){
     // Create an object of the Car class
-    Car myCar;
+    Tesla myCar;
 
     // Access methods from both base and derived classes
     myCar.start(); // This method is inherited from the Vehicle class
